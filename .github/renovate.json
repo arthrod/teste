@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:recommended",
+    ":enablePreCommit",
+    ":automergeMinor",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":pinVersions"
+  ],
+  "enabledManagers": ["pip_requirements", "pre-commit", "github-actions", "devcontainer", "dockerfile"],
+  "schedule": [
+      "before 10am on tuesday"
+  ]
+}

@@ -1,0 +1,15 @@
+_commit: v0.4.86
+_src_path: git@github.com:tschm/experiments.git
+description: teste
+gh_create: gh repo create arthrod/teste --public --description 'teste'
+page: https://arthrod.github.io/teste
+project_name: teste
+repository: https://github.com/arthrod/teste
+ssh_uri: git@github.com:arthrod/teste.git
+status: public
+use_dependabot: true
+use_devcontainer: true
+use_docker: true
+use_latex: true
+use_renovate: true
+username: arthrod
