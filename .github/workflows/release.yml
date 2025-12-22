@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate Tag
         id: tag
-        uses: tschm/cradle/actions/tag@v0.1.68  # Custom action to generate a new tag
+        uses: tschm/cradle/actions/tag@v0.4.1  # Custom action to generate a new tag
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
@@ -37,7 +37,7 @@ jobs:
     steps:
 
       - name: "Build and publish the Container"
-        uses: tschm/cradle/actions/docker@v0.1.68  # Custom action to build and publish Docker container
+        uses: tschm/cradle/actions/docker@v0.4.1  # Custom action to build and publish Docker container
         with:
           github_actor: ${{ github.actor }}  # GitHub username
           github_repository: ${{ github.repository }}  # Repository name
@@ -56,7 +56,7 @@ jobs:
           echo "Tag: ${{ needs.tagging.outputs.new_tag }}"  # Print the new tag
 
       - name: "Build and publish the LaTeX document"
-        uses: tschm/cradle/actions/latex@v0.1.68  # Custom action to build LaTeX documents
+        uses: tschm/cradle/actions/latex@v0.4.1  # Custom action to build LaTeX documents
         with:
           paper: paper/document.tex  # Path to the LaTeX document to build
           tag: ${{ needs.tagging.outputs.new_tag }}  # Tag from the tagging job
