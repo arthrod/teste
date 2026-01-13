@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4  # Check out the repository code
+        uses: actions/checkout@v6  # Check out the repository code
 
       - name: Generate Tag
         id: tag
