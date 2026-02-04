@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4  # Check out the repository code
+        uses: actions/checkout@v6  # Check out the repository code
 
       - uses: tschm/cradle/actions/latex@v0.4.1  # Custom action to build LaTeX documents
         with:
