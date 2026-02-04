@@ -2,7 +2,7 @@
 # This file lists all the Python packages required for the project
 
 # Scientific computing and numerical libraries
-numpy==2.2.6  # Fundamental package for scientific computing with Python
+numpy==2.3.5  # Fundamental package for scientific computing with Python
 
 # Optimization libraries
 cvxpy-base==1.8.1  # Python-embedded modeling language for convex optimization problems
