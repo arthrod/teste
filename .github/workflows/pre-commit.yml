@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout [${{ github.repository }}]
-        uses: actions/checkout@v4  # Check out the repository code
+        uses: actions/checkout@v6  # Check out the repository code
 
       - name: "Build the virtual environment"
         uses: tschm/cradle/actions/environment@v0.4.1  # Custom action to set up Python environment
