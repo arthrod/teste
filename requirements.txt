@@ -13,4 +13,4 @@ plotly==6.6.0  # Interactive, publication-quality graphing library
 kaleido==0.2.1.post1  # Static image export for web-based visualization libraries
 
 # Interactive notebooks
-marimo==0.20.2  # Interactive notebook tool for Python
+marimo==0.21.0  # Interactive notebook tool for Python
